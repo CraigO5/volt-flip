@@ -1,7 +1,9 @@
 .app [hidden]{display:none!important}
 .app-tabs{max-width:1320px;margin:0 auto 20px;display:flex;gap:6px;border-bottom:1px solid var(--border);padding-bottom:8px}
-.app-tabs button{background:transparent;color:var(--text);border-color:transparent;min-width:110px;font-weight:800}
-.app-tabs button[aria-selected="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.app-tabs a{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 12px;border:1px solid transparent;border-radius:7px;background:transparent;color:var(--text);min-width:110px;font:inherit;font-weight:800;text-decoration:none;cursor:pointer}
+.app-tabs a[aria-selected="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.app-tabs a:hover{border-color:var(--accent)}
+.app-tabs a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .solver-layout .clue input{width:2.1ch;min-width:0;border:0;border-bottom:1px solid #69746780;background:transparent;color:inherit;font:inherit;font-variant-numeric:tabular-nums;text-align:center;padding:0;border-radius:0}
 .solver-layout .clue input:focus{outline:2px solid var(--accent);outline-offset:2px}
 .solver-layout .clue input::placeholder{color:#68736a}

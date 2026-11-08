@@ -83,3 +83,5 @@ Run `npm run benchmark:solver` to reproduce the seeded comparison and generate `
 The `Deploy to GitHub Pages` workflow tests and publishes the static app on every push to `main`, or when run manually in Actions. Repository Settings → Pages must use **GitHub Actions** as its source. The workflow reads the site's base path automatically, so scripts, solver workers, skins, and sounds load correctly from a project URL.
 
 For a local production build matching this repository's Pages path, run `npm run build:pages -- --base=/volt-flip/`. The deployable files are in `dist/client`; the separate `npm run build` command still prepares the Sites scaffold.
+
+The game is at `/home/` and the solver at `/solver/`, relative to the app base. On GitHub Pages these are https://craigo5.github.io/volt-flip/home/ and https://craigo5.github.io/volt-flip/solver/. The root URL also opens the game. Both are static HTML entry points for direct visits and refreshes; navigation updates browser history without resetting either board.
