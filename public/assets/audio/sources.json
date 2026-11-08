@@ -1,0 +1,80 @@
+{
+  "flip-slide": {
+    "pack": "casino-audio",
+    "original": "card-slide-1.ogg",
+    "source": "https://kenney.nl/assets/casino-audio",
+    "license": "CC0 1.0"
+  },
+  "flip-snap": {
+    "pack": "casino-audio",
+    "original": "card-place-1.ogg",
+    "source": "https://kenney.nl/assets/casino-audio",
+    "license": "CC0 1.0"
+  },
+  "note-on": {
+    "pack": "interface-sounds",
+    "original": "tick_001.ogg",
+    "source": "https://kenney.nl/assets/interface-sounds",
+    "license": "CC0 1.0"
+  },
+  "note-off": {
+    "pack": "interface-sounds",
+    "original": "tick_002.ogg",
+    "source": "https://kenney.nl/assets/interface-sounds",
+    "license": "CC0 1.0"
+  },
+  "collect-chips": {
+    "pack": "casino-audio",
+    "original": "chips-stack-4.ogg",
+    "source": "https://kenney.nl/assets/casino-audio",
+    "license": "CC0 1.0"
+  },
+  "collect-chime": {
+    "pack": "interface-sounds",
+    "original": "confirmation_002.ogg",
+    "source": "https://kenney.nl/assets/interface-sounds",
+    "license": "CC0 1.0"
+  },
+  "explosion": {
+    "pack": "sci-fi-sounds",
+    "original": "explosionCrunch_000.ogg",
+    "source": "https://kenney.nl/assets/sci-fi-sounds",
+    "license": "CC0 1.0"
+  },
+  "picker-open": {
+    "pack": "interface-sounds",
+    "original": "open_001.ogg",
+    "source": "https://kenney.nl/assets/interface-sounds",
+    "license": "CC0 1.0"
+  },
+  "picker-close": {
+    "pack": "interface-sounds",
+    "original": "close_001.ogg",
+    "source": "https://kenney.nl/assets/interface-sounds",
+    "license": "CC0 1.0"
+  },
+  "picker-hover": {
+    "pack": "interface-sounds",
+    "original": "select_001.ogg",
+    "source": "https://kenney.nl/assets/interface-sounds",
+    "license": "CC0 1.0"
+  },
+  "earn-points": {
+    "pack": "rpg-audio",
+    "original": "handleCoins.ogg",
+    "source": "https://kenney.nl/assets/rpg-audio",
+    "license": "CC0 1.0"
+  },
+  "win-jingle": {
+    "pack": "digital-audio",
+    "original": "threeTone1.ogg",
+    "source": "https://kenney.nl/assets/digital-audio",
+    "license": "CC0 1.0"
+  },
+  "lose-jingle": {
+    "pack": "digital-audio",
+    "original": "lowThreeTone.ogg",
+    "source": "https://kenney.nl/assets/digital-audio",
+    "license": "CC0 1.0"
+  }
+}

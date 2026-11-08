@@ -1,0 +1,12 @@
+node_modules/
+dist/
+tests/.generated/
+
+# Local design history, generated QA captures, and machine settings
+qa/
+AGENTS.md
+design-qa.md
+.DS_Store
+.env
+.env.*
+!.env.example

@@ -1,0 +1,110 @@
+/* Three videogame palettes share the established board and control layout. */
+.skin-park{
+ --base:#e8f5e3;--surface:#fff9e6;--text:#182f40;--muted:#465f64;--border:#3d9e8e;
+ --accent:#e76f69;--on-accent:#172e3e;--active:#d9e7b5;--tile:#8ed3aa;--note:#fff4d7;--reveal:#fff6dc;--danger:#ad393d;
+ --ink:#183446;--line:#47a391;--side:#fff9e8eb;--side-text:#182f40;--button:#ffd76a;--shade:#b8d5bd;--bevel:#c2edd0;--display:'Pixelify Sans';
+ background-image:url('/assets/pocket-park-background.png');background-size:100% 100%;background-attachment:fixed;
+}
+.skin-darkworld{
+ --base:#160b23;--surface:#281637;--text:#fff3d7;--muted:#d5c4db;--border:#f7ecd1;
+ --accent:#99f6b7;--on-accent:#152630;--active:#d6e7bc;--tile:#291638;--note:#fff3d7;--reveal:#fff3d7;--danger:#f19bb5;
+ --ink:#fff3d7;--line:#f7ecd1;--side:transparent;--side-text:#fff3d7;--button:#99f6b7;--shade:#0b0514;--bevel:#4c355a;--display:'Pixelify Sans';
+ background-image:none;
+}
+.skin-dream{
+ --base:#f6efff;--surface:#fff6e1;--text:#2b245b;--muted:#625883;--border:#39316f;
+ --accent:#ffb884;--on-accent:#292354;--active:#e6edbd;--tile:#8183d3;--note:#fff4db;--reveal:#fff6df;--danger:#a43e51;
+ --ink:#2b245b;--line:#3b3378;--side:#6465b3;--side-text:#fff7e4;--button:#ffb884;--shade:#c8b8ed;--bevel:#a4a6ee;--display:'Pixelify Sans';
+ background-image:none;
+}
+.game-skin{font-family:'Nunito',Arial,sans-serif;font-weight:700;color:var(--text)}
+.game-skin header{border-color:var(--line)}
+.game-skin h1{font-family:var(--display),monospace;font-size:54px;color:#fff6df;letter-spacing:-1.5px;-webkit-text-stroke:1px var(--ink);text-shadow:2px 3px 0 var(--ink)}
+.skin-darkworld h1{-webkit-text-stroke:0;text-shadow:none;color:var(--text)}
+.game-skin .header-actions .icon-button,.game-skin .header-actions select{background:var(--surface);color:var(--text);border:2px solid var(--ink);box-shadow:0 3px 0 var(--shade);border-radius:12px}
+.game-skin .header-actions select{min-width:150px;max-width:174px;font-weight:800}
+.game-skin .header-actions label{color:var(--text)}
+.game-skin .play-sidebar{background:var(--side);border-color:var(--line);color:var(--side-text)}
+.game-skin .play-sidebar>.panel{border-color:var(--line)}
+.game-skin .axis{font-family:'Nunito',Arial,sans-serif;font-weight:900;color:var(--text)}
+.game-skin .axis-highlight{color:var(--accent);text-shadow:0 1px 0 var(--ink)}
+.game-skin .level-title{font-family:var(--display),monospace;color:var(--side-text);font-weight:700;border-color:var(--line);letter-spacing:-1px}
+.game-skin .level-score>.level-number{font-family:var(--display),monospace;color:var(--level-accent,var(--accent));font-weight:700;text-shadow:2px 3px 0 var(--ink);-webkit-text-stroke:1px var(--ink)}
+.game-skin .round-score strong{font-weight:900}
+.game-skin .round-score strong>svg{color:var(--button)}
+.game-skin .eyebrow,.game-skin .mark-label,.game-skin .note-help{color:var(--side-text);font-weight:800}
+.game-skin .bank-score{font-weight:700}
+.game-skin .card-back{background:var(--tile);background-image:none;border:2px solid var(--ink);box-shadow:inset 0 3px 0 var(--bevel),inset 0 -4px 0 #00000013,0 3px 0 var(--shade)}
+.game-skin .card-front{border:2px solid var(--ink);box-shadow:inset 0 3px 0 #ffffff65,inset 0 -4px 0 #00000012,0 3px 0 var(--shade)}
+.game-skin .tile{border-radius:13px}
+.game-skin .tile.line-highlight .card-face{border-color:var(--ink)}
+.game-skin .tile-mode-icon{color:var(--ink)}
+.skin-darkworld .tile-mode-icon,.skin-dream .tile-mode-icon{color:#fff6df}
+.game-skin .value{font-family:'Nunito',Arial,sans-serif;font-weight:900;letter-spacing:-1px}
+.game-skin .card-front[data-value="1"]{--face-bg:#fff4d7;--face-text:#1c3042}
+.game-skin .card-front[data-value="2"]{--face-bg:#d85e65;--face-text:#fff7e4}
+.game-skin .card-front[data-value="3"]{--face-bg:#487dbc;--face-text:#fff7e4}
+.game-skin .card-front[data-value="0"]{--face-bg:#444652;--face-text:#fff7e4}
+.game-skin .corner-1{--corner-fill:#fff4d7;color:#1c3042}
+.game-skin .corner-2{--corner-fill:#d85e65;color:#fff7e4}
+.game-skin .corner-3{--corner-fill:#487dbc;color:#fff7e4}
+.game-skin .corner-0{--corner-fill:#444652;color:#fff7e4}
+.game-skin .corner-excluded{--corner-fill:var(--excluded-bg);color:var(--excluded-text)}
+.game-skin .card-back.bomb-noted{background:#444652;box-shadow:inset 0 3px 0 #626674,0 3px 0 var(--shade)}
+.game-skin .clue{background:var(--reveal);color:#25324c;border:2px solid var(--ink);box-shadow:inset 0 -3px 0 #e4cfa85c,0 3px 0 var(--shade);border-radius:11px;font-weight:900}
+.game-skin .clue>span:last-child{color:#25324c}
+.game-skin .clue>span:first-child>svg{color:#a26b05}
+.game-skin .clue.line-highlight{background:var(--active);border-color:var(--ink)}
+.game-skin .picker-help,.game-skin .legend{color:var(--text)}
+.game-skin .legend>span:first-child>svg{color:#a26b05}
+.game-skin .mode-switch{border:2px solid var(--ink);box-shadow:0 3px 0 var(--shade);border-radius:10px;overflow:hidden}
+.game-skin .mode-option{background:var(--reveal);color:#26304a;font-weight:900}
+.game-skin .mode-option.active{background:var(--accent);color:var(--on-accent)}
+.game-skin .mode-option+.mode-option{border-color:var(--ink)}
+.game-skin .note-mark{background:var(--reveal);color:#26304a;border:2px solid var(--ink);border-radius:12px;box-shadow:inset 0 -3px 0 #e4cfa84a,0 3px 0 var(--shade);font-family:'Nunito',Arial,sans-serif;font-weight:900}
+.game-skin .note-mark.active{outline-color:var(--accent);border-color:var(--ink)}
+.game-skin .note-mark.is-excluded[data-note-value]{background:var(--excluded-bg);color:var(--excluded-text)}
+.game-skin .selection-check{background:var(--accent);color:var(--on-accent);border-color:var(--ink)}
+.game-skin .note-polarity button{color:var(--side-text);border-color:var(--line)}
+.game-skin .note-polarity button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.game-skin .clear-notes{background:var(--surface);color:var(--text);border:2px solid var(--ink);border-radius:9px;box-shadow:0 2px 0 var(--shade)}
+.game-skin .clear-notes.active{background:var(--accent);color:var(--on-accent)}
+.game-skin .round-actions .primary{background:var(--button);border:2px solid var(--ink);box-shadow:inset 0 2px 0 #ffffff6b,0 4px 0 var(--shade);color:var(--on-accent);border-radius:13px;font-weight:900}
+.game-skin .round-actions .primary:hover{background:var(--button);filter:brightness(1.04)}
+.game-skin .marking-menu,.game-skin .marking-caption{background:var(--surface);border-color:var(--ink);color:var(--text)}
+.game-skin .marking-cancel{background:var(--surface);color:var(--text);border-color:var(--surface)}
+.game-skin .marking-menu:not(.is-excluded) .marking-1{--wheel-bg:#fff4d7;--wheel-text:#1c3042}
+.game-skin .marking-menu:not(.is-excluded) .marking-2{--wheel-bg:#d85e65;--wheel-text:#fff7e4}
+.game-skin .marking-menu:not(.is-excluded) .marking-3{--wheel-bg:#487dbc;--wheel-text:#fff7e4}
+.game-skin .marking-menu:not(.is-excluded) .marking-0{--wheel-bg:#444652;--wheel-text:#fff7e4}
+.game-skin .help-dialog{background:var(--base);color:var(--text);border-color:var(--ink)}
+.game-skin .outcome-float{background:var(--base);border:2px solid var(--ink);box-shadow:0 5px 0 var(--shade)}
+.game-skin .board-outcome strong{font-family:var(--display),monospace;color:var(--accent);text-shadow:1px 2px 0 var(--ink)}
+/* Pixel outlines and square controls distinguish the dark RPG treatment. */
+.skin-darkworld h1{font-family:'Pixelify Sans',monospace;font-weight:700}
+.skin-darkworld .tile,.skin-darkworld .card-face,.skin-darkworld .clue,.skin-darkworld .note-mark{border-radius:3px}
+.skin-darkworld .card-back{border-color:#f7ecd1;box-shadow:inset 0 0 0 3px #291638,inset 0 0 0 4px #f7ecd180,0 3px 0 #0b0514}
+.skin-darkworld .card-front,.skin-darkworld .clue,.skin-darkworld .note-mark{border-color:#f7ecd1;box-shadow:0 3px 0 #0b0514}
+.skin-darkworld .header-actions .icon-button,.skin-darkworld .header-actions select,.skin-darkworld .mode-switch,.skin-darkworld .round-actions .primary,.skin-darkworld .clear-notes{border-radius:2px}
+.skin-darkworld .mode-option:not(.active){background:#f5c8cc}
+.skin-darkworld .level-score>.level-number{-webkit-text-stroke:0;text-shadow:none}
+.skin-darkworld .round-score strong>svg{color:#ee8eae}
+.skin-darkworld .clear-notes{background:var(--base);color:var(--text)}
+.skin-dream .play-sidebar{border:2px solid var(--ink);border-radius:22px;box-shadow:inset 0 3px 0 #a4a6ee,0 6px 0 #c8b8ed}
+.skin-dream .play-sidebar>.panel{border-color:#f7ecd1}
+.skin-dream .level-title{border-color:#fff4dc;color:#fff4dc;-webkit-text-stroke:1px var(--ink);text-shadow:2px 2px 0 var(--ink)}
+.skin-dream .bank-score,.skin-dream .round-score{color:var(--side-text)}
+.skin-dream .round-score strong>svg{color:#fff1b3}
+.skin-dream .clear-notes{color:#2b245b}
+.skin-dream .level-score>.level-number{font-family:'Nunito',Arial,sans-serif;font-weight:900}
+@media(max-width:1200px){.game-skin h1{font-size:46px}.game-skin .header-actions select{min-width:140px;max-width:160px}.game-skin .level-title{font-size:38px}}
+@media(max-width:920px){.game-skin .level-title{font-size:32px}}
+@media(max-width:720px){.game-skin .play-sidebar{border-top:2px solid var(--line);border-left:0}.skin-dream .play-sidebar{border:2px solid var(--ink)}.game-skin .level-title{font-size:clamp(24px,5vw,38px)}.game-skin h1{font-size:38px}.game-skin .header-actions select{min-width:120px;max-width:145px}.skin-park{background-size:auto 100%;background-attachment:scroll}}
+@media(max-width:450px){.game-skin h1{font-size:31px;letter-spacing:-1.5px;-webkit-text-stroke:.6px var(--ink);text-shadow:1px 2px 0 var(--ink)}.game-skin .header-actions{gap:5px}.game-skin .header-actions select{min-width:130px;width:130px;max-width:130px;font-size:11px;padding:6px}.game-skin .header-actions .icon-button{width:32px;height:34px;padding:6px}.game-skin .tile,.game-skin .clue,.game-skin .note-mark{border-radius:8px}.skin-darkworld .tile,.skin-darkworld .clue,.skin-darkworld .note-mark{border-radius:2px}.game-skin .card-face,.game-skin .clue{border-width:1.5px}.game-skin .value{font-size:28px}.game-skin .level-title{font-size:24px}.game-skin .level-score>.level-number{font-size:76px}.game-skin .note-help{font-size:14px}.game-skin .bank-score{font-size:16px}}
+
+.skin-park .round-score strong>svg{color:#9d6b05}
+
+@media(min-width:721px){.game-skin .play-sidebar>.panel{padding-top:18px;padding-bottom:18px}}
+/* End-of-round copy stays on each skin's own readable menu surface. */
+.game-skin .board-status:not(.sr-only){background:var(--surface);color:var(--text);border:2px solid var(--ink);border-radius:10px;box-shadow:0 3px 0 var(--shade);font-weight:800}
+.skin-darkworld .board-status:not(.sr-only){border-radius:2px}
